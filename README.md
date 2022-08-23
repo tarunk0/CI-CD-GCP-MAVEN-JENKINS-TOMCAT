@@ -144,11 +144,36 @@ Step: 3 Tomcat installation on tomcat server
  - Run tomcat and login with "tomcat" and password "s3cret"  
   
   
+Step: 3 Make a Maven Project in Jenkins:
+ - Project name: DeployOnTomcatServer
+ - Build
+   - Root POM pom.xml
+   - Goals and Options
+```
+   clean install package
+ ```
+ - Post Build Actions
+    - Add Post build action: Deploy war/ear to container.
+    - war/ear files - **/*.war
+    - container - add container - tomcat 9.x
+      - Credentials- Add jenkins
+      - Username: deployer
+      - Password: deployer
+      - ID: deployer_user
+      - Description: User to deploy on tomcat VM. 
+      - Add.
+  - Test the URL
+      - http://<Your_IP>:8080
   
-  
-  
-  
-  
+Step: 4 Web-Hook Configuration for automatic deployment
+  - Add web-hook to github repository
+    - Payload URL: http://<your_jenkins_public_ip>:8080/github-webhook/
+    - Enable "GitHub hook trigger for SCM polling in jenkins project. 
+
+Step: 5 Testing the CI/CD pipeline working or Not:
+  - clone code in local
+  - Do the the changes in index.html or index.js
+  - Commit and Push the changes. The build in jenkins will automatically triggered and changes will be refected on your webapp.
   
   
   
