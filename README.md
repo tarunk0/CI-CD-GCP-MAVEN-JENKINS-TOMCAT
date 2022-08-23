@@ -175,7 +175,12 @@ Step: 5 Testing the CI/CD pipeline working or Not:
   - Do the the changes in index.html or index.js
   - Commit and Push the changes. The build in jenkins will automatically triggered and changes will be refected on your webapp.
   
-  
+![image](https://user-images.githubusercontent.com/92631457/186278936-4ec79eea-27cc-470f-bbe7-8594790410f1.png)
+![image](https://user-images.githubusercontent.com/92631457/186278954-d7fc1333-0cb9-4ac2-b91f-4b3dc00261d2.png)
+![image](https://user-images.githubusercontent.com/92631457/186278971-5d9a9d04-a011-40d5-a750-9337b134cab6.png)
+
+
+Changes are reflected as soon as the changes are pushed to main branch. 
   
   
   
