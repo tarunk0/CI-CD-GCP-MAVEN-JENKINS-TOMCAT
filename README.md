@@ -1,5 +1,9 @@
 # CI-CD-GCP-MAVEN-JENKINS-TOMCAT
 
+![image](https://user-images.githubusercontent.com/92631457/186280297-47beaf51-9ada-4ee7-ac60-eb96dd2e29e6.png)
+![image](https://user-images.githubusercontent.com/92631457/186280331-a6aa4789-2d43-4537-ae7a-4604979b747c.png)
+
+
 Step: 1 Configure the Jenkins System:
 
 - Installation on Java on Jenkins.
